@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "lint:css": "stylelint 'src/**/*.{vue,scss,css}'"
+    "lint:css": "stylelint 'src/**/*.{scss,css}'"
   },
   "dependencies": {
     "vue": "^2.5.16",
@@ -39,7 +39,7 @@
     "not ie <= 8"
   ],
   "gitHooks": {
-    "pre-commit": "lint-staged & npm run test:unit"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
