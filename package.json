@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "lint:css": "stylelint 'src/**/*.{vue,scss,css}'"
   },
   "dependencies": {
     "vue": "^2.5.16",
@@ -23,7 +24,13 @@
     "chai": "^4.1.2",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.9.0",
+    "postcss-syntax": "^0.28.0",
     "sass-loader": "^7.0.1",
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^3.1.0",
+    "stylelint-webpack-plugin": "^0.10.5",
     "vue-template-compiler": "^2.5.16"
   },
   "browserslist": [
@@ -41,6 +48,11 @@
     ],
     "*.vue": [
       "vue-cli-service lint",
+      "stylelint 'src/**/*.vue'",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint 'src/**/*.scss'",
       "git add"
     ]
   }
