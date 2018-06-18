@@ -1,5 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import 'settings/base';
+@import 'tools/base';
+@import 'generic/base';
+@import 'elements/base';
+@import 'objects/base';
+@import 'components/base';
+@import 'themes/base';
+@import 'trumps/base';
